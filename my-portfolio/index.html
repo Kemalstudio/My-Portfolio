@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-key="page_title"></title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="dark-theme">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="header">
+        <div class="logo">
+            Kemal.
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home" data-i18n-key="nav_home"></a></li>
+                <li><a href="#services" data-i18n-key="nav_services"></a></li>
+                <li><a href="#resume" data-i18n-key="nav_resume"></a></li>
+                <li><a href="#work" data-i18n-key="nav_work"></a></li>
+                <li><a href="#contact" data-i18n-key="nav_contact"></a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <label class="theme-switch" for="theme-toggle-checkbox">
+                <input type="checkbox" id="theme-toggle-checkbox" aria-label="Toggle theme">
+                <span class="slider round"></span>
+            </label>
+            <div class="language-selector">
+                <select id="language-switcher">
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <button class="hire-me-btn" data-i18n-key="hire_me_btn"></button>
+        </div>
+    </header>
+
+    <div id="content-wrapper">
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <div class="hero-content">
+                <p class="subtitle" data-i18n-key="home_subtitle"></p>
+                <h1 class="title" data-i18n-key="home_title_part1">
+                    <br><span class="highlight" data-i18n-key="home_title_part2"></span>
+                </h1>
+                <p class="description" data-i18n-key="home_description"></p>
+                <div class="cta-links">
+                    <a href="#" class="btn download-cv" data-i18n-key="download_cv_btn">
+                        <i class="fas fa-download"></i>
+                    </a>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Github"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="rotating-border"></div>
+                <div class="rotating-border-inner"></div>
+                <img src="/Kemalstudio.jpg" alt="Атаев Кемал" class="hero-image">
+            </div>
+        </section>
+
+        <!-- Stats Section (always visible at bottom) -->
+        <section class="stats-section">
+            <div class="stat-item">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-label" data-i18n-key="stats_years_experience"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="9">0</span>
+                <span class="stat-label" data-i18n-key="stats_projects_completed"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="18">0</span>
+                <span class="stat-label" data-i18n-key="stats_technologies_mastered"></span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="9">0</span>
+                <span class="stat-label" data-i18n-key="stats_code_commits"></span>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="page-section">
+            <h2 class="section-title" data-i18n-key="services_title"></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <span class="service-number">01</span>
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-arrow-right service-arrow"></i>
+                            <i class="fas fa-circle service-circle"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title" data-i18n-key="service_web_dev_title"></h3>
+                    <p class="service-description" data-i18n-key="service_web_dev_description"></p>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">
+                        <span class="service-number">02</span>
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-arrow-right service-arrow"></i>
+                            <i class="fas fa-circle service-circle"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title" data-i18n-key="service_ui_ux_title"></h3>
+                    <p class="service-description" data-i18n-key="service_ui_ux_description"></p>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">
+                        <span class="service-number">03</span>
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-arrow-right service-arrow"></i>
+                            <i class="fas fa-circle service-circle"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title" data-i18n-key="service_logo_design_title"></h3>
+                    <p class="service-description" data-i18n-key="service_logo_design_description"></p>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">
+                        <span class="service-number">04</span>
+                        <div class="service-icon-wrapper">
+                            <i class="fas fa-arrow-right service-arrow"></i>
+                            <i class="fas fa-circle service-circle"></i>
+                        </div>
+                    </div>
+                    <h3 class="service-title" data-i18n-key="service_seo_title"></h3>
+                    <p class="service-description" data-i18n-key="service_seo_description"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="page-section">
+            <div class="resume-content">
+                <div class="resume-sidebar">
+                    <h2 class="sidebar-title" data-i18n-key="resume_why_hire_me_title"></h2>
+                    <p class="sidebar-description" data-i18n-key="resume_why_hire_me_description"></p>
+                    <div class="resume-tabs">
+                        <button class="resume-tab-btn active" data-tab="experience"
+                            data-i18n-key="resume_tab_experience"></button>
+                        <button class="resume-tab-btn" data-tab="education"
+                            data-i18n-key="resume_tab_education"></button>
+                        <button class="resume-tab-btn" data-tab="skills" data-i18n-key="resume_tab_skills"></button>
+                        <button class="resume-tab-btn" data-tab="about" data-i18n-key="resume_tab_about_me"></button>
+                    </div>
+                </div>
+                <div class="resume-details">
+                    <h2 class="details-title" data-i18n-key="resume_experience_title"></h2>
+                    <p class="details-description" data-i18n-key="resume_experience_description"></p>
+
+                    <div id="experience-content" class="tab-content active">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 - <span data-i18n-key="present_text"></span></span>
+                                <h3 class="timeline-title" data-i18n-key="exp_fullstack_dev_title"></h3>
+                                <p class="timeline-company" data-i18n-key="exp_fullstack_dev_company"></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2018 - 2019</span>
+                                <h3 class="timeline-title" data-i18n-key="exp_ui_ux_designer_title"></h3>
+                                <p class="timeline-company" data-i18n-key="exp_ui_ux_designer_company"></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2017 - 2018</span>
+                                <h3 class="timeline-title" data-i18n-key="exp_junior_dev_title"></h3>
+                                <p class="timeline-company" data-i18n-key="exp_junior_dev_company"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="education-content" class="tab-content">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025 - <span data-i18n-key="present_text"></span></span>
+                                <h3 class="timeline-title" data-i18n-key="edu_backend_immersion_title"></h3>
+                                <p class="timeline-company" data-i18n-key="edu_backend_immersion_platform"></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024</span>
+                                <h3 class="timeline-title" data-i18n-key="edu_ui_ux_basics_title"></h3>
+                                <p class="timeline-company" data-i18n-key="edu_ui_ux_basics_platform"></p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2024</span>
+                                <h3 class="timeline-title" data-i18n-key="edu_frontend_fundamentals_title"></h3>
+                                <p class="timeline-company" data-i18n-key="edu_frontend_fundamentals_platform"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="skills-content" class="tab-content">
+                        <div class="skills-grid">
+                            <div class="skill-item" data-tooltip="HTML5">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="CSS3">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="PHP">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="Sass">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="Laravel">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="JavaScript">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="Chart.js">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="MySQL">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="Figma">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="Bootstrap">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="PostgreSQL">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="jQuery">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="PHPMyAdmin">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="XAMPP">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip=".ENV">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="skill-item" data-tooltip="JSON">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="about-content" class="tab-content">
+                        <div class="about-info-grid">
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_name_label"></span>
+                                <span class="info-value">Атаев Кемал</span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_phone_label"></span>
+                                <span class="info-value" data-i18n-key="about_phone_value"></span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_experience_label"></span>
+                                <span class="info-value" data-i18n-key="about_experience_value"></span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_skype_label"></span>
+                                <span class="info-value">
+                                    kemalatayew913@outlook.com
+                                </span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_nationality_label"></span>
+                                <span class="info-value" data-i18n-key="about_nationality_value"></span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_email_label"></span>
+                                <span class="info-value">kemalatayew913@gmail.com</span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_freelance_label"></span>
+                                <span class="info-value" data-i18n-key="about_freelance_value_unavailable"></span>
+                            </div>
+                            <div class="info-pair">
+                                <span class="info-label" data-i18n-key="about_languages_label"></span>
+                                <span class="info-value" data-i18n-key="about_languages_value"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="page-section">
+            <div class="container">
+                <section class="gallery">
+
+                    <div class="frame">
+                        <div class="frame__content">
+                            <h2>Beautiful World</h2>
+                        </div>
+                    </div>
+
+                    <div class="frame">
+                        <div class="frame__content">
+                            <div class="frame-media frame-media_left" style="background-image: url(images/1.jpg)"></div>
+                        </div>
+                    </div>
+
+                    <div class="frame frame_bg">
+                        <div class="frame__content">
+                            <video class="frame-media frame-media_right" src="media/video_optimized.mp4" autoplay loop
+                                muted></video>
+                        </div>
+                    </div>
+
+                    <div class="frame"></div>
+
+                    <div class="frame">
+                        <div class="frame__content text-right">
+                            <h3>Pure planet</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing. Nemo fugit, rerum dolorem
+                                assumenda consequatur dicta error iure laboriosam temporibus.</p>
+                        </div>
+                    </div>
+
+                    <div class="frame frame_bg">
+                        <div class="frame__content">
+                            <div class="frame-media frame-media_left" style="background-image: url(images/2.jpg)"></div>
+                        </div>
+                    </div>
+
+                    <div class="frame"></div>
+
+                    <div class="frame frame_bg">
+                        <div class="frame__content">
+                            <div class="frame-media frame-media_right" style="background-image: url(images/3.jpg)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame"></div>
+
+                    <div class="frame">
+                        <div class="frame__content text-left">
+                            <h3>Ask the Mountains</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit. Rerum dolorem assumenda consequatur dicta
+                                error iure laboriosam temporibus omnis quae eaque aliquam esse unde accusamus dolores
+                                non soluta.</p>
+                        </div>
+                    </div>
+
+                    <div class="frame frame_bg">
+                        <div class="frame__content">
+                            <div class="frame-media frame-media_right" style="background-image: url(images/4.jpg)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame">
+                        <div class="frame__content">
+                            <video class="frame-media frame-media_left" src="media/video_optimized.mp4" autoplay loop
+                                muted></video>
+                        </div>
+                    </div>
+
+                    <div class="frame"></div>
+                    <div class="frame"></div>
+
+                    <div class="frame frame_bg">
+                        <div class="frame__content">
+                            <div class="frame-media frame-media_right" style="background-image: url(images/5.jpg)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame frame_bg">
+                        <div class="frame__content">
+                            <video class="frame-media" src="media/video_optimized.mp4" autoplay loop muted></video>
+                        </div>
+                    </div>
+
+                    <div class="frame"></div>
+                    <div class="frame"></div>
+
+                    <div class="frame">
+                        <div class="frame__content">© WebDesign Master</div>
+                    </div>
+
+                </section>
+            </div>
+
+            <img class="soundbutton paused" src="images/sound.gif" alt="Alt">
+            <audio class="audio" src="media/ambient.mp3" loop></audio>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+            <h2 class="section-title" data-i18n-key="contact_title"></h2>
+            <div class="contact-grid">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Имя" data-i18n-key="form_firstname_placeholder">
+                        <input type="text" placeholder="Фамилия" data-i18n-key="form_lastname_placeholder">
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Email адрес" data-i18n-key="form_email_placeholder">
+                        <input type="tel" placeholder="Номер телефона" data-i18n-key="form_phone_placeholder">
+                    </div>
+                    <select class="form-select" data-i18n-key="form_select_service_placeholder">
+                        <option value="" disabled selected data-i18n-key="form_select_service_placeholder"></option>
+                        <option value="web_development" data-i18n-key="service_web_dev_title"></option>
+                        <option value="ui_ux_design" data-i18n-key="service_ui_ux_title"></option>
+                        <option value="logo_design" data-i18n-key="service_logo_design_title"></option>
+                        <option value="seo" data-i18n-key="service_seo_title"></option>
+                    </select>
+                    <textarea placeholder="Напишите ваше сообщение здесь." rows="5"
+                        data-i18n-key="form_message_placeholder"></textarea>
+                    <button type="submit" class="send-message-btn" data-i18n-key="form_send_message_btn"></button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-block">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <span data-i18n-key="contact_phone_label"></span>
+                            <p data-i18n-key="contact_phone_value"></p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span data-i18n-key="contact_email_label"></span>
+                            <p data-i18n-key="contact_email_value"></p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <span data-i18n-key="contact_address_label"></span>
+                            <p data-i18n-key="contact_address_value"></p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fab fa-telegram-plane"></i>
+                        <div>
+                            <span data-i18n-key="contact_telegram_label"></span>
+                            <p>@kemal_studio</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <span data-i18n-key="contact_teams_label"></span>
+                            <p>https://teams.live.com/l/invite/FEAIAdNXUTnxyFnLgQ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
